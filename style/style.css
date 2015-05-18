@@ -1,0 +1,27 @@
+#xInput{
+	height: 20px;
+	background-color: yellow;
+	border: 3px solid black;
+	padding: 5px;
+}
+
+#yInput{
+	height: 20px;
+	background-color: yellow;
+	border: 3px solid black;
+	padding: 5px;
+}
+
+#xOutput{
+	min-height: 30px;
+	background-color: yellow;
+	border: 3px solid black;
+	padding: 5px;
+}
+
+#yOutput{
+	min-height: 30px;
+	background-color: yellow;
+	border: 3px solid black;
+	padding: 5px;
+}
