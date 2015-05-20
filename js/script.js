@@ -52,14 +52,3 @@ document.addEventListener('DOMContentLoaded', function(){
 		chart.draw(data, options);
 	}
 });
-
-	
-
-// function ButtonClicked(xInput,yInput){
-	// var p = document.createElement('p');
-	// p.textContent = x  + '= ' + xInput + y + '= ' + yInput;
-	// Output.insertBefore(p,xOutput,firstChild);
-	//yOutput.insertBefore(p,yOutput,firstChild);
-// 	console.log("button is clicked!!!");
-// 	document.Output.value = "x  + '= ' + xInput + y + '= ' + yInput";
-// };
