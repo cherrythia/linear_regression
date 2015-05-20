@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			x.push(xInput.value);
 			y.push(yInput.value);
 
-			myarray.push([xInput.value,yInput.value]);
+			myarray.push([parseFloat(xInput.value),parseFloat(yInput.value)]);
         	console.log(myarray);
 
 			console.log(x);
@@ -43,33 +43,22 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	// Graph starts here
 	plotGraph.addEventListener('click',graphPlot);
-	
+
 	function graphPlot () {
-		console.log("Graph is plotted!")
+
 		google.setOnLoadCallback();
-		chart.draw(data, options);
-	}
-
-		
-        var data = google.visualization.arrayToDataTable([
-        	
-          ['Year', 'Sales'],
-          ['2004',  1000 ],
-          ['2005',  1170 ],
-          ['2006',  660  ],
-          ['2007',  1030 ]
-        ]);
-
-        var options = {
+		console.log("Graph is plotted!");
+		 var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+		 var data = google.visualization.arrayToDataTable(myarray);
+		 
+		 var options = {
           title: 'Linear Regression Chart',
           curveType: 'none',
           legend: { position: 'bottom' }
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-              
-
+		chart.draw(data, options);
+	}
 });
 
 	
