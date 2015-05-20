@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', function(){
 	var Output = document.getElementById('Output');
 	var enterButton = document.getElementById('enterButton');
 	var plotGraph = document.getElementById('plotGraph');
-	var x = ['variable 1'];
-	var y = ['variable 2'];
 	var count = 0;
 	var i;
 	var myarray = [['variablex','variabley']];
@@ -18,15 +16,9 @@ document.addEventListener('DOMContentLoaded', function(){
 			p.textContent = "x" + count + " = " + xInput.value + "	" + "y" + count + " = " + yInput.value;
 			Output.appendChild(p);
 
-			// Append value to x & y array
-			x.push(xInput.value);
-			y.push(yInput.value);
-
+			// Append value to myarray
 			myarray.push([parseFloat(xInput.value),parseFloat(yInput.value)]);
         	console.log(myarray);
-
-			console.log(x);
-			console.log(y);
 
 			xInput.value = "";
 			yInput.value = "";
